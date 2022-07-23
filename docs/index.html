@@ -1,0 +1,24 @@
+<html>
+<head>
+  <script>
+    function mojibake() {
+      rate = 0.50
+      text = document.getElelmentById('textarea').innerText;
+      output = ''
+      for (c of text) {
+        if (Math.random() < rate) {
+          output += '繧ｪ'
+        }
+        else {
+          output += c
+        }
+      }
+      document.getElelmentById('textarea').innerText = output;
+    }
+  </script>
+</head>
+<body>
+  <textarea id="textarea"></textarea>
+  <button onclick=mojibake()></button>
+</body>
+</html>
