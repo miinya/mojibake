@@ -3,7 +3,7 @@
   <script>
     function mojibake() {
       rate = 0.50
-      text = document.getElelmentById('textarea').innerText;
+      text = document.getElementById('textarea').innerText;
       output = ''
       for (c of text) {
         if (Math.random() < rate) {
@@ -13,7 +13,7 @@
           output += c
         }
       }
-      document.getElelmentById('output').innerText = output;
+      document.getElementById('output').innerText = output;
     }
   </script>
 </head>
